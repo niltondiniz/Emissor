@@ -12,6 +12,7 @@ namespace Classes
         public string Serie { get; set; }
         public int UltimaNfe { get; set; }
         public int UltimaNfce { get; set; }
+
         public EmpresaConfigNF()
         {
         }
