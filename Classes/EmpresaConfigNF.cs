@@ -1,9 +1,9 @@
 ﻿using System;
-namespace Classes
+namespace Models
 {
     public class EmpresaConfigNF
     {
-        public int IdEmpresa { get; set; }
+        public int Id { get; set; }
         public string TipoEmissao { get; set; }
         public string SerieCertificado { get; set; }
         public int Ambiente { get; set; }
@@ -12,6 +12,9 @@ namespace Classes
         public string Serie { get; set; }
         public int UltimaNfe { get; set; }
         public int UltimaNfce { get; set; }
+        public int EmpresaId { get; set; }
+
+        public virtual Empresa Empresa { get; set; }
 
         public EmpresaConfigNF()
         {

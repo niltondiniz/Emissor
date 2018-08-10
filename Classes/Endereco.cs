@@ -1,10 +1,11 @@
 ﻿using System;
 namespace Models
 {
-    public class PessoaEndereco
+    public class Endereco
     {
-        public Guid Id { get; set; }
-        public int Seq { get; set; }
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public string Observacao { get; set; }
         public string Cep { get; set; }
         public string Logradouro { get; set; }
         public string Bairro { get; set; }
@@ -14,8 +15,9 @@ namespace Models
         public string UF { get; set; }
         public string IBGE { get; set; }
         public int Tipo { get; set; }
-        public Guid PessoaId { get; set; }
-        public PessoaEndereco()
+        public int PessoaId { get; set; }
+        public Pessoa Pessoa { get; set; }
+        public Endereco()
         {
         }
     }

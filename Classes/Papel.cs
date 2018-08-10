@@ -1,14 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+
 namespace Models
 {
-    public class Papeis
+    public class Papel
     {
-        public Guid Id { get; set; }
-        public string Papel { get; set; }
-        public bool Ativo { get; set; }
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public int Ativo { get; set; }
 
-        public Papeis()
+        public Papel()
         {
+            
         }
     }
 }
