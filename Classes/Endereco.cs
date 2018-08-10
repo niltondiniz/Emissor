@@ -1,8 +1,9 @@
 ﻿using System;
-namespace Classes
+namespace Models
 {
     public class PessoaEndereco
     {
+        public Guid Id { get; set; }
         public int Seq { get; set; }
         public string Cep { get; set; }
         public string Logradouro { get; set; }
@@ -13,6 +14,7 @@ namespace Classes
         public string UF { get; set; }
         public string IBGE { get; set; }
         public int Tipo { get; set; }
+        public Guid PessoaId { get; set; }
         public PessoaEndereco()
         {
         }
